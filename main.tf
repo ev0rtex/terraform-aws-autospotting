@@ -11,7 +11,7 @@ data "aws_regions" "current" {
 locals {
   all_regions        = data.aws_regions.current.names
   all_usable_regions = setsubtract(local.all_regions, var.unsupported_regions)
-  regions            = var.autospotting_regions_enabled == [] ? local.all_usable_regions : var.autospotting_regions_enabled
+  regions            = length(var.autospotting_regions_enabled) == 0 ? local.all_usable_regions : var.autospotting_regions_enabled
 }
 
 output "regions" {

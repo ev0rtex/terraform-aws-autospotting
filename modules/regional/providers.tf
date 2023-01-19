@@ -2,82 +2,191 @@
 # To update it just execute "terraform apply" again.
 
 provider "aws" {
-  alias  = "ap-northeast-1"
-  region = "ap-northeast-1"
+  alias               = "ap-northeast-1"
+  region              = "ap-northeast-1"
+  allowed_account_ids = ["307761260553"]
+  assume_role {
+    role_arn = "arn:aws:iam::307761260553:role/xacct/ops-admin"
+  }
 }
 
 provider "aws" {
-  alias  = "ap-northeast-2"
-  region = "ap-northeast-2"
+  alias               = "ap-northeast-2"
+  region              = "ap-northeast-2"
+  allowed_account_ids = ["307761260553"]
+  assume_role {
+    role_arn = "arn:aws:iam::307761260553:role/xacct/ops-admin"
+  }
 }
 
 provider "aws" {
-  alias  = "ap-south-1"
-  region = "ap-south-1"
+  alias               = "ap-south-1"
+  region              = "ap-south-1"
+  allowed_account_ids = ["307761260553"]
+  assume_role {
+    role_arn = "arn:aws:iam::307761260553:role/xacct/ops-admin"
+  }
 }
 
 provider "aws" {
-  alias  = "ap-southeast-1"
-  region = "ap-southeast-1"
+  alias               = "ap-south-2"
+  region              = "ap-south-2"
+  allowed_account_ids = ["307761260553"]
+  assume_role {
+    role_arn = "arn:aws:iam::307761260553:role/xacct/ops-admin"
+  }
 }
 
 provider "aws" {
-  alias  = "ap-southeast-2"
-  region = "ap-southeast-2"
+  alias               = "ap-southeast-1"
+  region              = "ap-southeast-1"
+  allowed_account_ids = ["307761260553"]
+  assume_role {
+    role_arn = "arn:aws:iam::307761260553:role/xacct/ops-admin"
+  }
 }
 
 provider "aws" {
-  alias  = "ca-central-1"
-  region = "ca-central-1"
+  alias               = "ap-southeast-2"
+  region              = "ap-southeast-2"
+  allowed_account_ids = ["307761260553"]
+  assume_role {
+    role_arn = "arn:aws:iam::307761260553:role/xacct/ops-admin"
+  }
 }
 
 provider "aws" {
-  alias  = "eu-central-1"
-  region = "eu-central-1"
+  alias               = "ap-southeast-3"
+  region              = "ap-southeast-3"
+  allowed_account_ids = ["307761260553"]
+  assume_role {
+    role_arn = "arn:aws:iam::307761260553:role/xacct/ops-admin"
+  }
 }
 
 provider "aws" {
-  alias  = "eu-north-1"
-  region = "eu-north-1"
+  alias               = "ca-central-1"
+  region              = "ca-central-1"
+  allowed_account_ids = ["307761260553"]
+  assume_role {
+    role_arn = "arn:aws:iam::307761260553:role/xacct/ops-admin"
+  }
 }
 
 provider "aws" {
-  alias  = "eu-west-1"
-  region = "eu-west-1"
+  alias               = "eu-central-1"
+  region              = "eu-central-1"
+  allowed_account_ids = ["307761260553"]
+  assume_role {
+    role_arn = "arn:aws:iam::307761260553:role/xacct/ops-admin"
+  }
 }
 
 provider "aws" {
-  alias  = "eu-west-2"
-  region = "eu-west-2"
+  alias               = "eu-central-2"
+  region              = "eu-central-2"
+  allowed_account_ids = ["307761260553"]
+  assume_role {
+    role_arn = "arn:aws:iam::307761260553:role/xacct/ops-admin"
+  }
 }
 
 provider "aws" {
-  alias  = "eu-west-3"
-  region = "eu-west-3"
+  alias               = "eu-north-1"
+  region              = "eu-north-1"
+  allowed_account_ids = ["307761260553"]
+  assume_role {
+    role_arn = "arn:aws:iam::307761260553:role/xacct/ops-admin"
+  }
 }
 
 provider "aws" {
-  alias  = "sa-east-1"
-  region = "sa-east-1"
+  alias               = "eu-south-2"
+  region              = "eu-south-2"
+  allowed_account_ids = ["307761260553"]
+  assume_role {
+    role_arn = "arn:aws:iam::307761260553:role/xacct/ops-admin"
+  }
 }
 
 provider "aws" {
-  alias  = "us-east-1"
-  region = "us-east-1"
+  alias               = "eu-west-1"
+  region              = "eu-west-1"
+  allowed_account_ids = ["307761260553"]
+  assume_role {
+    role_arn = "arn:aws:iam::307761260553:role/xacct/ops-admin"
+  }
 }
 
 provider "aws" {
-  alias  = "us-east-2"
-  region = "us-east-2"
+  alias               = "eu-west-2"
+  region              = "eu-west-2"
+  allowed_account_ids = ["307761260553"]
+  assume_role {
+    role_arn = "arn:aws:iam::307761260553:role/xacct/ops-admin"
+  }
 }
 
 provider "aws" {
-  alias  = "us-west-1"
-  region = "us-west-1"
+  alias               = "eu-west-3"
+  region              = "eu-west-3"
+  allowed_account_ids = ["307761260553"]
+  assume_role {
+    role_arn = "arn:aws:iam::307761260553:role/xacct/ops-admin"
+  }
 }
 
 provider "aws" {
-  alias  = "us-west-2"
-  region = "us-west-2"
+  alias               = "me-central-1"
+  region              = "me-central-1"
+  allowed_account_ids = ["307761260553"]
+  assume_role {
+    role_arn = "arn:aws:iam::307761260553:role/xacct/ops-admin"
+  }
+}
+
+provider "aws" {
+  alias               = "sa-east-1"
+  region              = "sa-east-1"
+  allowed_account_ids = ["307761260553"]
+  assume_role {
+    role_arn = "arn:aws:iam::307761260553:role/xacct/ops-admin"
+  }
+}
+
+provider "aws" {
+  alias               = "us-east-1"
+  region              = "us-east-1"
+  allowed_account_ids = ["307761260553"]
+  assume_role {
+    role_arn = "arn:aws:iam::307761260553:role/xacct/ops-admin"
+  }
+}
+
+provider "aws" {
+  alias               = "us-east-2"
+  region              = "us-east-2"
+  allowed_account_ids = ["307761260553"]
+  assume_role {
+    role_arn = "arn:aws:iam::307761260553:role/xacct/ops-admin"
+  }
+}
+
+provider "aws" {
+  alias               = "us-west-1"
+  region              = "us-west-1"
+  allowed_account_ids = ["307761260553"]
+  assume_role {
+    role_arn = "arn:aws:iam::307761260553:role/xacct/ops-admin"
+  }
+}
+
+provider "aws" {
+  alias               = "us-west-2"
+  region              = "us-west-2"
+  allowed_account_ids = ["307761260553"]
+  assume_role {
+    role_arn = "arn:aws:iam::307761260553:role/xacct/ops-admin"
+  }
 }
 

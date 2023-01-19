@@ -1,1 +1,1 @@
-FROM 709825985650.dkr.ecr.us-east-1.amazonaws.com/cloudutil/autospotting:1.0.8-rc3
+FROM 307761260553.dkr.ecr.us-east-1.amazonaws.com/canvas/autospotting:1.0
